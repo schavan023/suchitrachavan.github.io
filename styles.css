@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;  /* Light grayish-blue background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Header styling */
+header {
+    background-color: #0e6ab8; /* Blue color for the header */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* Navigation menu */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white; /* White text for the links */
+    text-decoration: none; /* Remove underlines */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header nav ul li a:hover {
+    color: #ffdd57; /* Yellow color for the hover effect */
+}
+
+/* Section styling */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white; /* White background for each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Section headings */
+h2 {
+    color: #0e6ab8; /* Blue color for section titles */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0e6ab8; /* Blue footer */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffdd57; /* Yellow color for the footer links */
+}
+
+/* Responsive design: Stack navigation links vertically on small screens */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
