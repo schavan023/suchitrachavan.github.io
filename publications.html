@@ -1,129 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Publications - Suchitra Chavan</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 2em; }
-        h1 { color: #2a4d69; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 1.5em; }
-        .title { font-weight: bold; }
-        .authors, .journal { font-style: italic; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications - Suchitra Chavan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Tiny, page-local tweaks only—keeps global header/footer coming from styles.css */
+    .pub-toolbar{
+      display:flex; align-items:center; justify-content:flex-end;
+      gap:.5rem; padding:0 1rem; margin:.5rem 0 0;
+    }
+    .pub-toolbar a{ display:inline-flex; align-items:center; gap:.4rem; text-decoration:none; }
+    .pub-toolbar svg{ width:20px; height:20px; }
+    .pub-list{ list-style:none; padding-left:0; }
+    .pub-list li{ margin: 1rem 0 1.25rem; }
+    .pub-title{ font-weight:700; }
+    .pub-title a{ text-decoration:none; }
+    .pub-title a:hover{ text-decoration:underline; }
+    .pub-authors, .pub-venue{ font-style:italic; }
+    .year-label{ margin-top:1.5rem; font-weight:700; }
+  </style>
 </head>
 <body>
+  <header>
     <h1>Publications</h1>
-    <ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="knowledgesharing.html">Knowledge Sharing</a></li>
+        <li><a href="publications.html" aria-current="page">Publications</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <li>
-            <div class="title">A laser capture microdissection transcriptome of <i>M. truncatula</i> roots responding to rhizobia reveals spatiotemporal tissue expression patterns of genes involved in nodule signaling and organogenesis</div>
-            <div class="authors">Schnabel, Elise; Thomas, Jacklyn; El-Hawaz, Rabia; Gao, Yueyao; Poehlman, William; Chavan, Suchitra; et al.</div>
-            <div class="journal">bioRxiv, 2023</div>
-        </li>
+    <!-- Small toolbar for Google Scholar profile -->
+    <div class="pub-toolbar">
+      <a href="https://scholar.google.com/citations?user=cEjmFkEAAAAJ&hl=en" target="_blank" rel="noopener" title="View on Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M2 8.5l10-4 10 4-10 4-10-4z" fill="#2a4d69"/>
+          <path d="M6 11v4.5c0 .6.4 1.1 1 1.3l5 1.7 5-1.7c.6-.2 1-.7 1-1.3V11l-6 2.4L6 11z" fill="#5d8aa8"/>
+          <circle cx="20" cy="14" r="1.5" fill="#2a4d69"/>
+        </svg>
+        <span>Google Scholar</span>
+      </a>
+    </div>
+  </header>
 
-        <li>
-            <div class="title">Laser Capture Microdissection Transcriptome Reveals Spatiotemporal Tissue Gene Expression Patterns of <i>Medicago truncatula</i> Roots Responding to Rhizobia</div>
-            <div class="authors">Schnabel, Elise; Thomas, Jacklyn; El-Hawaz, Rabia; Gao, Yueyao; Poehlman, William L; Chavan, Suchitra; et al.</div>
-            <div class="journal">Molecular Plant-Microbe Interactions, 2023</div>
-        </li>
+  <section>
+    <p><em>Latest first • Each title opens a Google Scholar search for the work.</em></p>
 
-        <li>
-            <div class="title">Fixation and Laser Capture Microdissection of Plant Tissue for RNA Extraction and RNASeq Library Preparation</div>
-            <div class="authors">Chavan, Suchitra; Schnabel, Elise; Saski, Christopher; Frugoli, Julia</div>
-            <div class="journal">Current Protocols, 2023</div>
-        </li>
-
-        <li>
-            <div class="title">A <i>Medicago truncatula</i> autoregulation of nodulation mutant transcriptome analysis reveals disruption of the SUNN pathway causes constitutive expression changes...</div>
-            <div class="authors">Schnabel, Elise L; Chavan, Suchitra A; Gao, Yueyao; Poehlman, William L; Feltus, Frank Alex; Frugoli, Julia A</div>
-            <div class="journal">Current Issues in Molecular Biology, 2023</div>
-        </li>
-
-        <li>
-            <div class="title">Transcriptome analysis of <i>Medicago truncatula</i> Autoregulation of Nodulation mutants reveals that disruption of the SUNN pathway...</div>
-            <div class="authors">Schnabel, Elise L; Chavan, Suchitra A; Gao, Yueyao; Poehlman, William L; Feltus, F Alex; Frugoli, Julia A</div>
-            <div class="journal">bioRxiv, 2023</div>
-        </li>
-
-        <li>
-            <div class="title">Time series transcriptome analysis in <i>Medicago truncatula</i> shoot and root tissue during early nodulation</div>
-            <div class="authors">Gao, Yueyao; Selee, Bradley; Schnabel, Elise L; Poehlman, William L; Chavan, Suchitra A; Frugoli, Julia A; Feltus, Frank Alex</div>
-            <div class="journal">Frontiers in Plant Science, 2022</div>
-        </li>
-
-        <li>
-            <div class="title">Identifying temporally regulated root nodulation biomarkers using time series gene co-expression network analysis</div>
-            <div class="authors">Poehlman, William L; Schnabel, Elise L; Chavan, Suchitra A; Frugoli, Julia A; Feltus, Frank Alex</div>
-            <div class="journal">Frontiers in Plant Science, 2019</div>
-        </li>
-
-        <li>
-            <div class="title">CHAPTER THREE IDENTIFYING TEMPORALLY REGULATED ROOT NODULATION BIOMARKERS IN <i>MEDICAGO TRUNCATULA</i> USING TIME SERIES GENE COEXPRESSION ANALYSIS</div>
-            <div class="authors">Poehlman, William L; Schnabel, Elise; Chavan, Suchitra; Frugoli, Julia; Alex, F</div>
-            <div class="journal">TigerPrints (Clemson University), 2018</div>
-        </li>
-
-        <li>
-            <div class="title">Fixation and laser capture microdissection of plant tissue for RNA extraction and RNASeq library preparation</div>
-            <div class="authors">Chavan, Suchitra; Schnabel, Elise; Saski, Christopher; Frugoli, Julia</div>
-            <div class="journal">Current Protocols in Plant Biology, 2018</div>
-        </li>
-
-        <li>
-            <div class="title">Population Structure of <i>Pseudocercospora fijiensis</i> in Costa Rica Reveals Shared Haplotype Diversity with Southeast Asian Populations</div>
-            <div class="authors">Amanda, Saville; Melodi, Charles; Suchitra, Chavan; Miguel, Muñoz; Luis, Gómez-Alpizar; Beagle, Ristaino Jean</div>
-            <div class="journal">Unpublished, 2017</div>
-        </li>
-
-        <li>
-            <div class="title">Population structure of <i>Pseudocercospora fijiensis</i> in Costa Rica reveals shared haplotype diversity with Southeast Asian populations</div>
-            <div class="authors">Saville, Amanda; Charles, Melodi; Chavan, Suchitra; Munoz, Miguel; Gómez-Alpizar, Luis; Ristaino, Jean Beagle</div>
-            <div class="journal">Phytopathology, 2017</div>
-        </li>
-
-        <li>
-            <div class="title">Characterization of the recombination activities of the <i>Entamoeba histolytica</i> Rad51 recombinase</div>
-            <div class="authors">Kelso, Andrew A; Goodson, Steven D; Chavan, Suchitra; et al.</div>
-            <div class="journal">Molecular and Biochemical Parasitology, 2016</div>
-        </li>
-
-        <li>
-            <div class="title">Molecular characterization and genetic diversity of <i>Mycosphaerella fijiensis</i> in Costa Rica using sequence based nuclear markers</div>
-            <div class="authors">Ristaino, J; Saville, A; Charles, M; Wyatt, M; Chavan, S</div>
-            <div class="journal">Phytopathology (Conference Abstract), 2016</div>
-        </li>
-
-        <li>
-            <div class="title">Molecular characterization and genetic diversity of <i>Mycosphaerella fijiensis</i>, in Costa Rica using sequence based nuclear markers</div>
-            <div class="authors">Chavan, S; Wyatt, M; Alpizar, LG; Munoz, ME; Ristaino, JB</div>
-            <div class="journal">Phytopathology (Conference Abstract), 2015</div>
-        </li>
-
-        <li>
-            <div class="title">Diversity and evolution of Rp1 rust resistance genes in four maize lines</div>
-            <div class="authors">Chavan, Suchitra; Gray, Judy; Smith, Shavannor M</div>
-            <div class="journal">Theoretical and Applied Genetics, 2015</div>
-        </li>
-
-        <li>
-            <div class="title">A rapid and efficient method for assessing pathogenicity of <i>Ustilago maydis</i> on maize and teosinte lines</div>
-            <div class="authors">Chavan, Suchitra; Smith, Shavannor M</div>
-            <div class="journal">Journal of Visualized Experiments (JoVE), 2014</div>
-        </li>
-
-        <li>
-            <div class="title">Expression profiling and analysis of resistance to <i>Ustilago maydis</i> in maize and teosinte</div>
-            <div class="authors">Chavan, Suchitra Arun</div>
-            <div class="journal">PhD Dissertation, University of Georgia, 2014</div>
-        </li>
-
-        <li>
-            <div class="title">Expression profiling and evolution of pathogenesis related genes in maize and teosinte in response to <i>Ustilago maydis</i></div>
-            <div class="authors">Chavan, S; Smith, SM</div>
-            <div class="journal">Phytopathology (Conference Abstract), 2013</div>
-        </li>
-
+    <div class="year-label">2025</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Detection+and+Tracking+of+SARS-CoV-2+Lineages+through+National+Wastewater+Surveillance+System+Pathogen+Genomics">
+            Detection and Tracking of SARS-CoV-2 Lineages through National Wastewater Surveillance System Pathogen Genomics
+          </a>
+        </div>
+        <div class="pub-authors">Feistel, DJ; Welsh, R; Mercante, J; Mark-Carew, M; Caravas, J; Boddapati, A; <b>Chavan, S</b>; et al.</div>
+        <div class="pub-venue">Emerging Infectious Diseases 31 (Suppl 1), S57, 2025</div>
+      </li>
     </ul>
+
+    <div class="year-label">2023</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Laser+Capture+Microdissection+Transcriptome+Reveals+Spatiotemporal+Tissue+Gene+Expression+Patterns+of+Medicago+truncatula+Roots+Responding+to+Rhizobia">
+            Laser Capture Microdissection Transcriptome Reveals Spatiotemporal Tissue Gene Expression Patterns of <i>Medicago truncatula</i> Roots Responding to Rhizobia
+          </a>
+        </div>
+        <div class="pub-authors">Schnabel, E; Thomas, J; El-Hawaz, R; Gao, Y; Poehlman, WL; <b>Chavan, S</b>; et al.</div>
+        <div class="pub-venue">Molecular Plant-Microbe Interactions 36 (12), 805-820, 2023</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Fixation+and+Laser+Capture+Microdissection+of+Plant+Tissue+for+RNA+Extraction+and+RNASeq+Library+Preparation">
+            Fixation and Laser Capture Microdissection of Plant Tissue for RNA Extraction and RNASeq Library Preparation
+          </a>
+        </div>
+        <div class="pub-authors"><b>Chavan, S</b>; Schnabel, E; Saski, C; Frugoli, J</div>
+        <div class="pub-venue">Current Protocols 3 (7), e844, 2023</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=A+Medicago+truncatula+Autoregulation+of+Nodulation+Mutant+Transcriptome+Analysis+Reveals+Disruption+of+the+SUNN+Pathway+Causes+Constitutive+Expression+Changes">
+            A <i>Medicago truncatula</i> Autoregulation of Nodulation Mutant Transcriptome Analysis Reveals Disruption of the SUNN Pathway Causes Constitutive Expression Changes in Some Genes …
+          </a>
+        </div>
+        <div class="pub-authors">Schnabel, EL; <b>Chavan, SA</b>; Gao, Y; Poehlman, WL; Feltus, FA; Frugoli, JA</div>
+        <div class="pub-venue">Current Issues in Molecular Biology 45 (6), 4612-4631, 2023</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=A+laser+capture+microdissection+transcriptome+of+M.+truncatula+roots+responding+to+rhizobia+reveals+spatiotemporal+tissue+expression+patterns+of+genes">
+            A laser capture microdissection transcriptome of <i>M. truncatula</i> roots responding to rhizobia reveals spatiotemporal tissue expression patterns of genes involved in …
+          </a>
+        </div>
+        <div class="pub-authors">Schnabel, E; Thomas, J; El-Hawaz, R; Gao, Y; Poehlman, W; <b>Chavan, S</b>; et al.</div>
+        <div class="pub-venue">bioRxiv, 2023</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Transcriptome+analysis+of+Medicago+truncatula+Autoregulation+of+Nodulation+mutants+reveals+that+disruption+of+the+SUNN+pathway+causes+constitutive+expression+changes">
+            Transcriptome analysis of <i>Medicago truncatula</i> Autoregulation of Nodulation mutants reveals that disruption of the SUNN pathway causes constitutive expression changes in a small …
+          </a>
+        </div>
+        <div class="pub-authors">Schnabel, EL; <b>Chavan, SA</b>; Gao, Y; Poehlman, WL; Feltus, FA; Frugoli, JA</div>
+        <div class="pub-venue">bioRxiv, 2023</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2022</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Time+Series+Transcriptome+Analysis+in+Medicago+truncatula+Shoot+and+Root+Tissue+During+Early+Nodulation">
+            Time Series Transcriptome Analysis in <i>Medicago truncatula</i> Shoot and Root Tissue During Early Nodulation
+          </a>
+        </div>
+        <div class="pub-authors">Gao, Y; Selee, B; Schnabel, EL; Poehlman, WL; <b>Chavan, SA</b>; Frugoli, JA; …</div>
+        <div class="pub-venue">Frontiers in Plant Science 13, 861639, 2022</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2019</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Identifying+temporally+regulated+root+nodulation+biomarkers+using+time+series+gene+co-expression+network+analysis">
+            Identifying temporally regulated root nodulation biomarkers using time series gene co-expression network analysis
+          </a>
+        </div>
+        <div class="pub-authors">Poehlman, WL; Schnabel, EL; <b>Chavan, SA</b>; Frugoli, JA; Feltus, FA</div>
+        <div class="pub-venue">Frontiers in Plant Science 10, 1409, 2019</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2018</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=CHAPTER+THREE+Identifying+temporally+regulated+root+nodulation+biomarkers+in+Medicago+truncatula+using+time+series+gene+co-expression+analysis">
+            CHAPTER THREE IDENTIFYING TEMPORALLY REGULATED ROOT NODULATION BIOMARKERS IN <i>MEDICAGO TRUNCATULA</i> USING TIME SERIES GENE COEXPRESSION ANALYSIS
+          </a>
+        </div>
+        <div class="pub-authors">Poehlman, WL; Schnabel, E; <b>Chavan, S</b>; Frugoli, J; Alex, F</div>
+        <div class="pub-venue">TigerPrints (Clemson University), 2018</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Fixation+and+laser+capture+microdissection+of+plant+tissue+for+RNA+extraction+and+RNASeq+library+preparation">
+            Fixation and laser capture microdissection of plant tissue for RNA extraction and RNASeq library preparation
+          </a>
+        </div>
+        <div class="pub-authors"><b>Chavan, S</b>; Schnabel, E; Saski, C; Frugoli, J</div>
+        <div class="pub-venue">Current Protocols in Plant Biology 3 (1), 14–32, 2018</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2017</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Population+Structure+of+Pseudocercospora+fijiensis+in+Costa+Rica+Reveals+Shared+Haplotype+Diversity+with+Southeast+Asian+Populations">
+            Population Structure of <i>Pseudocercospora fijiensis</i> in Costa Rica Reveals Shared Haplotype Diversity with Southeast Asian Populations
+          </a>
+        </div>
+        <div class="pub-authors">Saville, A; Charles, M; <b>Chavan, S</b>; Munoz, M; Gómez-Alpizar, L; Ristaino, JB</div>
+        <div class="pub-venue">Phytopathology 107 (12), 1541–1548, 2017</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Population+Structure+of+Pseudocercospora+fijiensis+in+Costa+Rica+Reveals+Shared+Haplotype+Diversity+with+Southeast+Asian+Populations+Amanda+Saville+Melodi+Charles+Suchitra+Chavan">
+            Population Structure of <i>Pseudocercospora fijiensis</i> in Costa Rica Reveals Shared Haplotype Diversity with Southeast Asian Populations
+          </a>
+        </div>
+        <div class="pub-authors">Amanda, Saville; Melodi, Charles; <b>Suchitra, Chavan</b>; Miguel, Muñoz; Luis, Gómez-Alpizar; Beagle, Ristaino Jean</div>
+        <div class="pub-venue">Unpublished, 2017</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2016</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Characterization+of+the+recombination+activities+of+the+Entamoeba+histolytica+Rad51+recombinase">
+            Characterization of the recombination activities of the <i>Entamoeba histolytica</i> Rad51 recombinase
+          </a>
+        </div>
+        <div class="pub-authors">Kelso, AA; Goodson, SD; <b>Chavan, S</b>; Say, AF; Turchick, A; Sharma, D; …</div>
+        <div class="pub-venue">Molecular and Biochemical Parasitology 210 (1–2), 71–84, 2016</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Molecular+characterization+and+genetic+diversity+of+Mycosphaerella+fijiensis+in+Costa+Rica+using+sequence+based+nuclear+markers+Ristaino+Saville+Charles+Wyatt+Chavan">
+            Molecular characterization and genetic diversity of <i>Mycosphaerella fijiensis</i> in Costa Rica using sequence based nuclear markers
+          </a>
+        </div>
+        <div class="pub-authors">Ristaino, J; Saville, A; Charles, M; Wyatt, M; <b>Chavan, S</b></div>
+        <div class="pub-venue">Phytopathology (Conference Abstract), 2016</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2015</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Molecular+characterization+and+genetic+diversity+of+Mycospharella+fijiensis,+in+Costa+Rica+using+sequence+based+nuclear+markers+Chavan+Wyatt+Alpizar+Munoz+Ristaino">
+            Molecular characterization and genetic diversity of <i>Mycospharella fijiensis</i>, in Costa Rica using sequence based nuclear markers
+          </a>
+        </div>
+        <div class="pub-authors"><b>Chavan, S</b>; Wyatt, M; Alpizar, LG; Munoz, ME; Ristaino, JB</div>
+        <div class="pub-venue">Phytopathology (Conference Abstract), 2015</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Diversity+and+evolution+of+Rp1+rust+resistance+genes+in+four+maize+lines">
+            Diversity and evolution of Rp1 rust resistance genes in four maize lines
+          </a>
+        </div>
+        <div class="pub-authors"><b>Chavan, S</b>; Gray, J; Smith, SM</div>
+        <div class="pub-venue">Theoretical and Applied Genetics 128 (5), 985–998, 2015</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2014</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=A+rapid+and+efficient+method+for+assessing+pathogenicity+of+Ustilago+maydis+on+maize+and+teosinte+lines">
+            A rapid and efficient method for assessing pathogenicity of <i>Ustilago maydis</i> on maize and teosinte lines
+          </a>
+        </div>
+        <div class="pub-authors"><b>Chavan, S</b>; Smith, SM</div>
+        <div class="pub-venue">Journal of Visualized Experiments (JoVE), 50712, 2014</div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Expression+profiling+and+analysis+of+resistance+to+Ustilago+maydis+in+maize+and+teosinte+Suchitra+Arun+Chavan+2014+University+of+Georgia">
+            Expression profiling and analysis of resistance to <i>Ustilago maydis</i> in maize and teosinte
+          </a>
+        </div>
+        <div class="pub-authors">Chavan, Suchitra Arun</div>
+        <div class="pub-venue">PhD Dissertation, University of Georgia, 2014</div>
+      </li>
+    </ul>
+
+    <div class="year-label">2013</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <a target="_blank" rel="noopener"
+             href="https://scholar.google.com/scholar?q=Expression+profiling+and+evolution+of+pathogenesis+related+genes+in+maize+and+teosinte+in+response+to+Ustilago+maydis+Chavan+Smith+2013">
+            Expression profiling and evolution of pathogenesis related genes in maize and teosinte in response to <i>Ustilago maydis</i>
+          </a>
+        </div>
+        <div class="pub-authors"><b>Chavan, S</b>; Smith, SM</div>
+        <div class="pub-venue">Phytopathology (Conference Abstract), 2013</div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Contact me via email: <a href="mailto:csuchitra32@outlook.com">csuchitra32@outlook.com</a></p>
+  </footer>
 </body>
 </html>
